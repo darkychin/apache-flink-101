@@ -4,8 +4,6 @@ Date: 29 November 2025
 
 Source of learning: https://developer.confluent.io/courses/apache-flink/stateful-stream-processing/
 
-todo: finish jotting this note
-
 Types of queries
 
 - Stateless Queries
