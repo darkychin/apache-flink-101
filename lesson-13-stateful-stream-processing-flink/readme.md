@@ -4,7 +4,9 @@ Date: 29 November 2025
 
 Source of learning: https://developer.confluent.io/courses/apache-flink/stateful-stream-processing/
 
-Types of queries
+Note that all of the blockquote are the direct quoted from the source site.
+
+## Types of queries
 
 - Stateless Queries
 - Materializing Queries
