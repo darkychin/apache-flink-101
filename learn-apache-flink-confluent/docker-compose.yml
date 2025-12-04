@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  confluent-cli:
+    container_name: compose-confluent-cli-flink
+    build: 
+      context: .
+    # solution: https://stackoverflow.com/a/39150040/7939633
+    stdin_open: true  # docker run -i
+    tty: true
