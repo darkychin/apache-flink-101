@@ -4,7 +4,8 @@ Source of learning: https://developer.confluent.io/courses/apache-flink/hands-on
 
 Date: 28 November 2025
 
-Note that all of the blockquote are the direct quoted from the source site.
+> Disclaimer:
+> Note that all of the blockquote are the direct quoted from the source site.
 
 ## What is a table?
 
