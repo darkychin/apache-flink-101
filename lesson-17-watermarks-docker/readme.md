@@ -137,6 +137,8 @@ This happens because the "pageviews_kafka" table is having this config.
 > With the fixed partitioner, each of the parallel instances of Flink's Kafka sink writes to a single Kafka partition, and this query is running with a parallelism of one.  
 > However, "pageviews_kafka" topic has 3 partitions, so the overall effect is that the topic has some empty/idle partitions, and this is holding back the watermarks.
 
+[Source](https://nightlies.apache.org/flink/flink-docs-stable/docs/connectors/table/kafka/#sink-partitioner)
+
 Kafka topic number of partition is initialize during `docker compose` and it can be found in this file [here](https://github.com/confluentinc/learn-apache-flink-101-exercises/blob/b35705eedcc079784df0ed648dcf6719f51d8adf/docker-compose.yml#L18).
 
 Solution 1:  
@@ -147,6 +149,8 @@ set 'table.exec.source.idle-timeout' = '2000';
 ```
 
 > This will set the idle timeout to 2000 milliseconds (2 seconds), after which the runtime will mark the idle partitions as inactive, and ignore them (unless they begin to produce data).
+
+[Source](https://nightlies.apache.org/flink/flink-docs-stable/docs/connectors/table/kafka/#source-per-partition-watermarks)
 
 Solution 2:
 
