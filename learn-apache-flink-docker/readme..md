@@ -23,3 +23,14 @@ docker compose run --rm sql-client
 ```
 
 Added flag `-rm` to remove the container when container stops.
+
+## Clean up
+
+Only run this when you have finish the course.
+
+```sh
+# at directory /learn-apache-flink-101-exercises
+docker compose down -v
+```
+
+A flag "-v" is added to remove the volume mount associate with the compose.
