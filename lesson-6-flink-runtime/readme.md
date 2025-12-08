@@ -41,4 +41,8 @@ Source of learning: https://developer.confluent.io/courses/apache-flink/runtime/
 |failure recoveries resumes from the recent snapshot|failure recovery does a reset and full restart|
 |guarantees exactly-once results despite out-of-order data and restarts due to failures|Staright forward exactly-once guarantees|
 
+Checkout more here:
+
+- [Flink Architecture Document](https://nightlies.apache.org/flink/flink-docs-stable/docs/concepts/flink-architecture/)
+
 **Congratulations!** You have completed this tutorial!
